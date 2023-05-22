@@ -1,0 +1,82 @@
+.list-ultimos-gastos{
+    display: flex;
+   
+    justify-content: center;
+    text-align: center;
+    margin: 2em 0;
+  
+}
+
+.lista-ultimos-gastos__container{
+    
+    background-color: var(--rosa-escuro);
+    border-radius: 10px;
+    width: 85vw;
+
+}
+
+.lista-ultimos-gastos__titulo{
+    text-align: start;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--branco);
+    padding: 1em 0 ;
+    text-transform: uppercase;
+    border-bottom: 0.5px solid var(--branco);
+    margin: 0 1em;
+}
+
+.lista-ultimos-gastos__lista{
+    margin: 2em 0;
+}
+.lista-ultimos-gastos__item{
+    padding: 1em;
+    border-bottom: 2px solid var(--rosa);
+    border-right: 4px solid var(--rosa-mais-claro);
+    width: 80%;
+    margin: 1em auto;
+    border-radius: 5px;
+}
+
+.lista-ultimo-gasto__item-titulo{
+    font-size: 16px;
+    color: var(--branco);
+    text-align: start;
+    text-transform: uppercase;
+    text-decoration: underline ;
+    
+}
+
+.lista-ultimo-gasto__valor{
+    font-size: 18px;
+    color: var(--branco);
+    font-weight: 700;
+    padding: 0.5em;
+}
+.lista-ultimo-gasto__data{
+    font-size: 14px;
+    color: var(--branco);
+}
+
+@media screen and (min-width: 820px){
+    .list-ultimos-gastos{
+        
+        width: 100%;
+    }
+    .lista-ultimos-gastos__container{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1280px){
+   .container-card__list-ultimos-gastos{
+    justify-self: center;
+   }
+   
+    .list-ultimos-gastos{
+        
+        width: 100%;
+        align-self: center;
+    }
+
+}

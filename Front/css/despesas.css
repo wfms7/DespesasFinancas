@@ -1,0 +1,178 @@
+/*.despesas__tabela{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    row-gap: 1rem;
+    background-color: var(--rosa-escuro);
+    border-radius: 10px;
+    border: 1px solid var(--rosa-escuro);
+    margin-bottom: 1.5rem;
+}
+
+.despesas__container-titulo{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: var(--branco);
+    border-radius: 10px 10px 0px 0px;
+    padding: 1rem;
+    width: 95%;
+  
+
+}
+
+.despesas__id{
+    font-size:20px ;
+    color: var(--preto-comTransparencia);
+    
+}
+
+.despesas__titulo{
+    font-size: 20px;
+    font-weight: 700;
+    justify-self: center;
+    
+}
+.despesas__container-button-add{
+    display: flex;
+    margin: 1rem;
+    justify-content: end;
+   
+}
+*/
+/*
+.despesas__continer-dados{
+    width: 90%;
+    display: none;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "tipo valorTipo"
+     "segmento valorSegmento"
+     "periodo valorPeriodo"
+     "valor valorDinheiro"
+    ;
+    
+    margin: 0 auto;
+    background-color: var(--rosa-mais-claro);
+    padding: 1.5rem;
+    
+}
+
+.despesas__continer-dados-ativo{
+    display: grid;
+}
+*/
+.despesa__tipo{
+    grid-area: tipo;
+}
+
+.despesa__tipoValor{
+    grid-area: valorTipo;
+}
+
+.despesas__segmento{
+    grid-area: segmento;
+}
+
+.despesas__segmentoValor{
+    grid-area:valorSegmento ;
+}
+
+.despesas__pediodo{
+    grid-area: periodo;
+}
+.despesas__pediodoValor{
+    grid-area: valorPeriodo;
+}
+
+.despesas__valor{
+    grid-area: valor;
+}
+
+.despesas__valorDinheiro{
+    grid-area: valorDinheiro ;
+}
+
+/*.despesas__label{
+    font-size: 16px;
+    text-align: right;
+    font-weight: 700;
+    border-bottom: 2px var(--branco) solid ;
+  
+    padding: 0.5rem;
+}
+
+.despesas__info{
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 2px var(--branco) solid ;
+    border-bottom-right-radius: 10px;
+    padding: 0.5rem;
+}
+
+.despesas__container-botao{
+    display: flex;
+    width: 100%;
+    column-gap: 1rem;
+    justify-content: space-around;
+}
+
+*/
+
+
+
+@media screen and (min-width: 1280px){
+  /*  .despesas__tabela{
+        display: grid;
+        grid-template-columns: 1fr 2fr auto;
+        width: 95%;
+        background-color: transparent;
+        border:none;
+        margin-bottom: .5rem;
+    }
+
+    
+
+    .despesas__container-titulo{
+      width: auto;
+      align-self: center;
+      background-color: transparent;
+      
+    }
+
+    .despesas__continer-dados{
+        display: grid;
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+       "tipo segmento periodo valor"
+       " valorTipo valorSegmento valorPeriodo valorDinheiro"    
+    ;
+        padding: 0.5rem;
+    }
+
+    .despesas__label, .despesas__info{
+        border-bottom:none;
+        border-right: 1px solid var(--preto-comTransparencia);
+        border-bottom-right-radius: 0;
+        text-align: center;
+        
+
+    }
+    
+    .despesas__container-botao{
+        align-items: center;
+        
+    }
+   
+    .despesas__icon{
+        display: none;
+        
+    }
+
+ 
+*/
+   
+
+   
+}

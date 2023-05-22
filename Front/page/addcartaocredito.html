@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Finanças Pessoais</title>
+</head>
+<body>
+    <header class="header" data-headerMenu>
+
+    </header>
+    <nav class="nav-menu" data-headerNav data-pag="cartaocredito"> 
+    </nav>
+    <main class="main">
+        <Section data-alert class="alert "></Section>
+        <section class="titulo">
+            <h1 class="titulo__principal">Adicionar Cartão de Credito</h1>
+            <p class="titulo__data" data-today>14 - Janeiro - 2023</p>
+        </section>
+        <form class="fomulario__principal card_form" id="form-card">
+            <fieldset class="formulario__campo " >
+                <label class="campo__etiqueta" for="nomecard" >Cartão</label>
+                <input name="nomecard" id="nomecard" class="campo__escrita" type="text" autocomplete="off" required  data-validar>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+            <fieldset class="formulario__campo " >
+                <label class="campo__etiqueta" for="datavencimenticard" >Data de vencimento</label>
+                <input name="datavencimenticard" id="datavencimenticard" class="campo__escrita campo_datavencimeto" type="date" autocomplete="off" required  data-validar>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+            <div class="position-button-salvar-voltar-card">
+                <input value="Salvar" class="button-principal" id="salvar" type="submit" >
+                <a class="button-principal" href="./cartaocredito.html" >Voltar</a>
+            </div>
+        </form>
+    </main>
+    <footer class="footer" data-footer>
+    </footer>
+    <script src="../js/app/view/menu.js" type="module"></script>
+    <script src="../js/app/view/footer.js"></script>
+    <script src="../js/main.js" type="module"></script>
+</body>
+</html>

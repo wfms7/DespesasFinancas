@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Finanças Pessoais</title>
+</head>
+<body>
+    <header class="header" data-headerMenu data-pag="renda">
+
+    </header>
+    <nav class="nav-menu" data-headerNav> 
+     </nav>
+     <main class="main">
+      <Section data-alert class="alert ">
+        
+      </Section>
+        <section class="titulo">
+            <h1 class="titulo__principal"> Adicionar Renda</h1>
+            <p class="titulo__data" data-today>14 - Janeiro - 2023</p>
+        </section>
+
+
+        <form class="fomulario__principal renda_form" id="renda_form">
+            <fieldset class="formulario__campo position-renda">
+                <label class="campo__etiqueta" for="renda-nome">Nome</label>
+                <input type="text" name="renda-nome"  id="renda-nome" class="campo__escrita" autocomplete="off" required maxlength="50" data-validar>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-renda">
+                <label  class="campo__etiqueta" for="renda-tipo">Tipo</label>
+                <select name="renda-tipo" id="renda-tipo" class="campo__escrita-select" required data-validar>
+                     <option  value="Fixa">Fixa</option>
+                    <option  value="Extra">Extra</option>
+                
+                </select>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-renda">
+            
+            <label class="campo__etiqueta-checkBox"> Mensal <input type="checkbox" name="renda-mensal" id="renda-mensal" class="campo__escrita" > </label>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-renda">
+                
+              <label  class="campo__etiqueta" for="renda-periodo-inicio">Periodo</label>
+            <div class="conteiner__group">
+              <label for="renda-periodo-inicio" class="renda__periodo-label">Inicio: </label> <input type="date" name="renda-periodoinicio" id="renda-periodo-inicio" class="campo__escrita_data" data-validar required >
+                              
+              <label for="renda-periodo-fim" class="renda__periodo-label">Fim: </label><input type="date" name="renda-periodofim" id="renda-periodo-fim" class="campo__escrita_data" data-validar required > 
+                             
+              <span class="mensagem__texto"></span>
+           
+            </div>
+             
+
+            </fieldset>
+
+            <fieldset class="formulario__campo position-renda">
+                <label  class="campo__etiqueta" for="renda-valor">Valor</label>
+              <Label class="renda__periodo-label">R$  <input type="number" name="renda-valor" id="renda-valor" autocomplete="off"  step="0.01" class="campo__escrita" required placeholder="350,00" data-validar>
+                <span class="mensagem__texto"></span>
+              </Label>
+              
+                
+            </fieldset>
+          <!--  <fieldset class="formulario__campo position-renda">
+                <label  class="campo__etiqueta-checkBox" for="renda-valor">Ativo
+              <input type="checkbox" name="renda-valor" id="renda-valor" class="campo__escrita" required ></Label>
+              </label>
+                <span class="mensagem__texto"></span>
+            </fieldset>-->
+
+            <div class="container__button position-renda">
+                <input value="Salvar" class="button-principal" id="salvar"  type="submit" >
+                <a class="button-principal  " href="../page/renda.html">Voltar </a>
+            </div>
+
+        </form>
+     </main>
+     <footer class="footer" data-footer>
+    </footer>
+     <script src="../js/app/view/menu.js" type="module"></script>
+     <script src="../js/app/view/footer.js"></script>
+     <script src="../js/app/controller/income/incomeControllerPost.js" type="module"></script>
+     <script src="../js/main.js" type="module"></script>
+</body>
+</html>

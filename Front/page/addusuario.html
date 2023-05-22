@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Finanças Pessoais</title>
+</head>
+<body>
+    <header class="header" data-headerMenu>
+
+    </header>
+    <nav class="nav-menu" data-headerNav data-pag="usuario"> 
+     </nav>
+     <main class="main">
+        <Section data-alert class="alert ">
+         <!-- <div class="alert_container show" >
+           <div class="alert__container-right-erro"></div>
+            <div class="alert-container-center-erro">
+                <h2 class="alert__titulo">Aviso</h2>
+                <p class=" alert__mensagem">Registro salvo com sucesso</p>
+                <p class="alert__footer"></p>
+            </div>
+            <div class="alert__container-left-erro"> <img  src="../img/x-circle-w.svg" alt="botao para fechar" class="alert__btn_x" id="closeAlert"> </div>
+           
+        </div>-->
+        
+            </Section>
+        <section class="titulo">
+            <h1 class="titulo__principal">Adicionar Usuario</h1>
+            <p class="titulo__data" data-today>14 - Janeiro - 2023</p>
+        </section>
+      
+        <form class="fomulario__principal user_form" id="form-user">
+                   
+            <fieldset class="formulario__campo position-user">
+                <label class="campo__etiqueta" for="nomeuser">Nome</label>
+                <input name="nomeuser" id="nomeuser" class="campo__escrita" type="text" autocomplete="off" required data-validar>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-user">
+                <label class="campo__etiqueta" for="nomemaeuser">Nome da mãe</label>
+                <input name="nomemaeuser" id="nomemaeuser" class="campo__escrita" type="text" autocomplete="off"  required data-validar>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-user">
+                <label class="campo__etiqueta" for="dataNascimentouser">Data de nascimento</label>
+                <input name="dataNascimentouser" id="dataNascimentouser" class="campo__escrita" type="date" autocomplete="off" required data-validar>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-user">
+                <label class="campo__etiqueta" for="emailuser">E-mail</label>
+                <input name="emailuser" id="emailuser" class="campo__escrita" type="email" autocomplete="off" required data-validar>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-user">
+                <label class="campo__etiqueta" for="loginuser">Login</label>
+                <input name="loginuser" id="loginuser" class="campo__escrita" type="text" autocomplete="off" minlength="3" maxlength="15" required data-validar>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-user">
+                <label class="campo__etiqueta" for="senhauser">Senha</label>
+                <input name="senhauser" id="senhauser" class="campo__escrita" type="password" autocomplete="off" minlength="6" maxlength="15"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"  required data-validar>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-user">
+                <label class="campo__etiqueta" for="repetirSenhauser">Repetir senha</label>
+                <input name="repetirSenhauser" id="repetirSenhauser" class="campo__escrita" autocomplete="off" type="password"  minlength="6" maxlength="15"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"  required data-validar>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <div class="container__button position-user">
+                <input value="Salvar" class="button-principal" id="salvar"  type="submit" >
+                <a class="button-principal  " href="./usuario.html">Voltar </a>
+            </div>
+
+        </form>
+
+     </main>
+     <footer class="footer" data-footer>
+    </footer>
+     <script src="../js/app/view/menu.js" type="module"></script>
+     <script src="../js/app/view/footer.js"></script>
+     <script src="../js/main.js" type="module"></script>
+     <script src="../js/app/controller/user/userControllerPost.js" type="module"></script>
+</body>
+</html>

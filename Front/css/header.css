@@ -1,0 +1,139 @@
+
+
+.header__container{
+    display: flex;
+    padding: 0 1em;
+    background-color: var(--preto);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu{
+    background-color: transparent;
+    border: none;
+}
+
+.header__imagem-logo{
+    width: 65%;
+}
+.header__user{
+    background-color: var(--cinza2);
+    border-radius: 100%;
+    margin: 0.5 0;
+}
+.header__user-acronym{
+    padding: .5em;
+}
+.nav-menu{
+    background-color:var(--cinza2  );
+}
+
+.nav-menu__container{
+    background-color: var(--cinza2  );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 50vw;
+    height: 100vh;
+   
+    position: absolute;
+    left: -100vw;
+    transition: 1s;
+    z-index: 10;
+}
+
+.nav-menu__lista{
+    padding: 1em 0 0 0;
+}
+
+.nav-menu__item {
+
+    padding: 1em 0;
+   
+
+}
+
+
+.nav-menu__container-ativo{
+    left: 0vw;
+    transition: 1s;
+}
+
+.nav-menu__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--rosa-escuro);
+    margin-left: 10px;
+}
+.nav-menu__item--ativo{
+  background-color: var(--rosa-escuro);
+
+}
+
+.nav-menu__link--ativo{
+    color: var(--branco);
+
+}
+.btn-Sair{
+    margin-bottom: 50%;
+    border: 0;
+    border-top: 1px var(--rosa-escuro) solid;
+    border-bottom: 1px var(--rosa-escuro) solid;
+    color: var(--rosa-escuro);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-Sair:hover{
+    background-color: var(--rosa-escuro);
+    color: var(--branco);
+}
+
+@media screen and (min-width: 820px) {
+    .header__imagem-logo{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .header__container{
+      display: grid;
+      grid-template-columns: 1fr auto;
+            }
+    .header__imagem-logo{
+        width: 20%;
+        justify-self:center ;
+        margin-left: 47px;
+        
+    }
+
+    .header__user{
+        
+    }
+    .header__user-acronym{
+        padding: 1em;
+    }
+    .header__menu{
+        display: none;
+    }
+ 
+    .nav-menu{
+        display: inline-block;
+        width: 200px;
+
+    }
+   
+
+    .nav-menu__container{
+       
+        left: auto;
+        width: 200px;
+         height: 100vh;
+         position: fixed;
+         z-index: 0;
+      
+    }
+    
+}

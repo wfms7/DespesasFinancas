@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Finanças Pessoais</title>
+</head>
+<body>
+    <header class="header" data-headerMenu data-pag="cartaocredito"> 
+
+    </header>
+    <nav class="nav-menu" data-headerNav> 
+     </nav>
+     <main>
+        <section class="titulo">
+            <h1 class="titulo__principal">Cartões de Credito</h1>
+            <p class="titulo__data" data-today>14 - Janeiro - 2023</p>
+        </section>
+        <section>
+            <div class="listaGrid__container-button-add">
+            <a href="../page/addcartaocredito.html" class="button-principal">
+                <div class="button-img icon-plus"></div>
+                <span class="button-text">Adicionar Renda</span>
+            </a>
+        </div>
+        </section>
+        <Section data-alert class="alert ">
+            
+        </Section>
+        <section data-deletetag>
+
+        </section>
+
+       <!-- <section>
+            
+            <div class="tableitens__busca-container">
+                <button class="button-search" id="btnlimparCampo">
+                    <div class="deletar-icon incon-rotate" aria-label="Botão buscar"></div>
+                 
+                </button>
+                
+                <input type="date" name="" id="buscaInput" class="tableitens__texto" placeholder="Pesquisar por Periodo ">
+                        
+                <button class="button-search" id="btnBuscarPorInput">
+                    <div class="search-icon" aria-label="Botão buscar"></div>
+                   
+                </button>
+            </div>
+        </section>-->
+
+        <section>
+            <div class="tableitens__total-linhas-container">
+                <label  class="tableitens__total-linhas-valor">Total linhas : <label id="total-linhas">0</label></label>
+                <img src="../img/arrow-left-circle.svg" alt="botão voltar a lista" class="tableitens__left" id="btn-left">
+                <label class="tableitens__numero-pagina-container"> <p class="tableitens__numero-pagina" id="numero-pagina">1</p>  </label>
+                <img src="../img/arrow-right-circle.svg" alt="botão avançar a lista" class="tableitens__right" id="btn-right" >
+            </div>
+         </section>
+
+         <section >
+            <div class="table-container">
+             <div class=" table-fixed">   
+                    <table id="resizeMe" class="tableitens">
+                        <thead>
+                            <tr class="tableitens__header">
+                                <th class="tableitens__header-iten">Cartão</th>
+                                <th class="tableitens__header-iten">Data de Vencimento</th>
+                               
+                                <th class="tableitens__header-iten"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="tableitens__body" data-pricipal>
+                    
+                       </tbody>
+                    </table>
+             </div>
+             </div>
+          </section>
+
+     </main>
+     <footer class="footer" data-footer>
+    </footer>
+     <script src="../js/app/view/menu.js" type="module"></script>
+     <script src="../js/app/view/footer.js"></script>
+     <script src="../js/main.js" type="module"></script>
+     <script src="../js/app/view/resizeColumns.js" type="module"></script>
+   
+     <script src="../js/app/view/pagination.js" type="module"></script>
+</body>
+</html>

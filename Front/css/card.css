@@ -1,0 +1,142 @@
+
+.card-boas-vindas{
+    display:flex ;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+
+.card-boas-vindas__container{
+    display:flex ;
+    flex-direction: column;
+    width: 85vw;
+    background-color: var(--rosa-escuro);
+    border-radius: 10px;
+    
+}
+
+.card-boas-vindas__container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    margin-bottom: 2em;
+
+}
+.card-boas-vindas__titulo{
+    color: var(--branco);
+    font-size: 20px;
+    font-weight: 700;
+   
+
+}
+.card-boas-vindas__mensagem{
+    color: var(--branco);
+    margin: 1em 0;
+
+}
+
+.card-boas-vindas__imagem{
+
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+.card-finanaca-mes{
+    display: flex;
+   justify-content: center;
+}
+
+.card-financa-mes__conteiner{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 95vw;
+    background-color: var(--rosa-mais-claro);
+    height: 80px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1.5em;
+   
+
+}
+.financa-mes__titulo{
+font-size: 12px;
+margin-bottom: 0.2em;
+
+}
+.card-financa-mes__valor{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 820px) {
+
+    .card-boas-vindas__container{
+        display: grid;
+        grid-template-columns:auto auto;
+        padding: 1.5em;
+        margin-bottom: 2em;
+    
+    }
+
+    .card-boas-vindas__titulo{
+        align-self: end;
+        color: var(--branco);
+        font-size: 20px;
+        font-weight: 700;
+       
+    
+    }
+    .card-boas-vindas__mensagem{
+        color: var(--branco);
+        margin: 1em 0;
+
+    
+    }
+    
+    .card-boas-vindas__imagem{
+       justify-self: end;
+        width: 80%;
+        grid-row: 1 / span 2;
+        grid-column: 2 ;
+        border-radius: 20px;
+        padding: 1em;
+    }
+
+    .container-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        
+    }
+    .container-card__financeira-card{
+        grid-column: 1 / span 2;
+        display: flex;
+        justify-content: space-around;
+    }
+    .card-financa-mes__conteiner{
+        width: 250px;
+ }
+
+ @media screen and (min-width: 1280px){
+   
+    
+    .container-card{
+      
+        width: 900px;
+        row-gap: 2em;
+        column-gap: 1em;
+        grid-template-columns: 1fr auto ;
+        margin: 0 auto;
+
+    }
+
+
+    .card-boas-vindas__container{
+        
+        width: 600px;
+    }
+
+ }
+   
+}

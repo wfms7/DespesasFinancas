@@ -1,0 +1,102 @@
+
+ .viwer-icon{
+    background-image: url("../img/eye.svg");
+    width: 24px;
+    height:  24px;
+    background-repeat: no-repeat;
+    
+ }
+
+ .edit-icon{
+    background-image: url("../img/edit-2.svg");
+    width: 24px;
+    height:  24px;
+    background-repeat: no-repeat;
+    
+ }
+
+ .trash-icon{
+    background-image: url("../img/trash-2.svg");
+    width: 24px;
+    height:  24px;
+    background-repeat: no-repeat;
+    
+    
+ }
+
+ .search-icon{
+   background-image: url("../img/search.svg");
+   width: 24px;
+   height:  24px;
+   background-repeat: no-repeat;
+   
+   
+}
+
+.deletar-icon{
+   background-image: url("../img/delete.svg");
+   width: 24px;
+   height:  24px;
+   background-repeat: no-repeat;
+     
+}
+
+.deletar-icon , .incon-rotate{
+   background-image: url("../img/delete.svg");
+   width: 24px;
+   height:  24px;
+   background-repeat: no-repeat;
+   transform: rotate(180deg);
+     
+}
+
+
+ .chevrons-down-icon{
+    background-image: url("../img/chevrons-down.svg");
+    width: 24px;
+    height:  24px;
+    background-repeat: no-repeat;
+ }
+
+ .chevrons-up-icon{
+    background-image: url("../img/chevrons-up.svg");
+    width: 24px;
+    height:  24px;
+    background-repeat: no-repeat;
+ }
+
+
+ .icon-plus{
+   background-image: url("../img/plus-circle-rosa.svg");
+   width: 24px;
+   height:  24px;
+   background-repeat: no-repeat;
+ }
+
+ @media screen and (min-width: 1280px){
+
+    .edit-icon{
+        background-size: 16px 16px;
+        width: 16px;
+        height:  16px;
+    }
+
+    .trash-icon{
+        background-size: 16px 16px;
+        width: 16px;
+        height:  16px;
+    }
+
+     .viwer-icon{
+
+        background-size: 16px 16px;
+        width: 16px;
+        height:  16px;
+     }
+
+     .icon-plus{
+      background-size: 16px 16px;
+      width: 16px;
+      height:  16px;
+     }
+ }

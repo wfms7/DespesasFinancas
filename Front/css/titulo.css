@@ -1,0 +1,27 @@
+.titulo{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.titulo__principal{
+  
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--rosa-escuro);
+
+}
+
+.titulo__data{
+ margin: .5em;
+ color: var(--preto-comTransparencia);
+}
+
+@media screen and (min-width: 1280px){
+    .titulo{
+        margin-left: 10%;
+        width: 50%;
+       
+    }
+}

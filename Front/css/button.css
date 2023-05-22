@@ -1,0 +1,127 @@
+.button-principal{
+    
+    background-color: var(--branco);
+    padding: 1rem 4rem;
+    border-radius: 10px;
+    border: 1px solid var(--preto-comTransparencia);
+    margin-bottom: .5rem;
+
+}
+
+.button-text{
+    display: none;
+}
+
+ .button-search{
+    background-color: var(--branco);
+    border-radius: 10px;
+    border: 0;
+   
+    border: 1px solid var(--preto-comTransparencia);
+   
+    padding: .5em;
+}
+
+.perfil__container-button .button-principal{
+
+    padding: 1rem 3rem;
+}
+
+.listaGrid__container-button-add .button-principal {
+    border-radius: 100%;
+    padding: 1rem;
+    transform: translateY(-90px);
+    position: absolute;
+}
+
+@media screen and (min-width: 820px){
+
+    .perfil__container-button .button-principal{
+
+        padding: 1rem 4rem;
+    }
+
+    .tableitens__body-container-botao .button-principal{
+        padding: 1rem;
+        margin: .5rem;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 1280px){
+
+
+    .button-principal{
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+
+  
+
+    .button-text{
+        display: inline-block;
+    }
+
+    
+.button-principal:hover{
+    background-color: var(--rosa-escuro);
+    color:var(--branco);
+    
+
+}
+
+.container__button ,.button-principal{
+    padding: .5rem 4rem;
+}
+
+.listaGrid__container-button-add .button-principal{
+
+    border-radius: 10px;
+}
+
+
+.button-principal:hover .viwer-icon {
+    background-image: url("../img/eye-w.svg");
+}
+
+.button-principal:hover .edit-icon {
+    background-image: url("../img/edit-w-2.svg");
+}
+
+.button-principal:hover  .trash-icon {
+    background-image: url("../img/trash-w-2.svg");
+}
+
+.button-principal:hover  .icon-plus {
+    background-image: url("../img/plus-circle-w.svg");
+}
+
+.button-text{
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    font-weight: 700;
+    
+ }
+
+ .perfil__container-button .button-principal{
+
+    padding: 1rem 2rem;
+}
+
+.button-text{
+    display: none;
+}
+.tableitens__body-container-botao .button-principal{
+    padding: .5rem ;
+    margin: .5rem;
+    
+}
+
+
+}

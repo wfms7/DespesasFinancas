@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Finanças Pessoais</title>
+</head>
+<body>
+    <header class="header" data-headerMenu data-pag="despesas"> 
+
+    </header>
+    <nav class="nav-menu" data-headerNav> 
+     </nav>
+
+     <main class="main">
+        <section class="titulo">
+            <h1 class="titulo__principal">Adicionar Despesa</h1>
+            <p class="titulo__data" data-today>14 - Janeiro - 2023</p>
+        </section>
+        <form class="fomulario__principal despesa-form">
+            <fieldset class="formulario__campo position-despesas">
+                <label  class="campo__etiqueta" for="despesa-nome">Nome</label>
+                <input type="text" name="despesa-nome"  id="despesa-nome" class="campo__escrita" required maxlength="50">
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-despesas">
+                <label  class="campo__etiqueta" for="despesa-tipo">Tipo</label>
+                <select name="despesa-tipo" id="despesa-tipo" class="campo__escrita-select" required>
+                    <option  value="Variável">Variável</option>
+                    <option  value="Fixo">Fixo</option>
+                
+                </select>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-despesas">
+                <label  class="campo__etiqueta" for="despesa-segmento">Segmento</label>
+                <input type="text" name="despesa-segmento" id="despesa-segmento" class="campo__escrita" maxlength="50">
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-despesas">
+                <label  class="campo__etiqueta" for="despesa-periodo">Periodo (quantidade de meses)</label>
+                <input type="number" name="despesa-periodo" id="despesa-periodo" class="campo__escrita" placeholder="3">
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-despesas">
+                <label  class="campo__etiqueta" for="despesa-valor">Valor</label>
+              <Label>R$  <input type="number" name="despesa-valor" id="despesa-valor" class="campo__escrita" required placeholder="350,00"></Label>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <div class="container__button position-despesas">
+                <input value="Salvar" class="button-principal" id="salvar"  type="submit" >
+                <a class="button-principal  " href="../index.html">Voltar </a>
+            </div>
+
+        </form>
+     </main>
+     <footer class="footer" data-footer>
+    </footer>
+     <script src="../js/app/view/menu.js" type="module"></script>
+     <script src="../js/app/view/footer.js"></script>
+     <script src="../js/main.js" type="module"></script>
+</body>
+</html>

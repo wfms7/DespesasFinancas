@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Finanças Pessoais</title>
+</head>
+<body>
+    <header class="header" data-headerMenu>
+
+    </header>
+    <nav class="nav-menu" data-headerNav data-pag="despesas"> 
+     </nav>
+     <main class="main">
+        <section class="titulo">
+            <h1 class="titulo__principal">Despesas</h1>
+            <p class="titulo__data" data-today>14 - Janeiro - 2023</p>
+        </section>
+        <section>
+            <div class="listaGrid__container-button-add">
+            <a href="../page/adddespesa.html" class="button-principal">
+                <div class="button-img icon-plus"></div>
+                <span class="button-text">Adicionar Despesa</span>
+            </a>
+        </div>
+        </section>
+        <section class="listaGrid__tabela">
+            <div class="listaGrid__container-titulo" data-btn-listaGrid  >
+            <label class="listaGrid__id" hidden>1</label>
+            <h2 class="listaGrid__titulo" >Luz</h2>
+            <span class="listaGrid__icon  chevrons-down-icon" data-icon-UpDn></span>
+            </div>
+            <div class="listaGrid__continer-dados" data-listaGrid-container>
+                <label class="listaGrid__label listaGrid__tipo">Tipo</label>
+                <p class="listaGrid__info listaGrid__tipoValor">variáveis</p>
+                <label class="listaGrid__label listaGrid__segmento">Segmento</label>
+                <p class="listaGrid__info listaGrid__segmentoValor">Moradia</p>
+                <label class="listaGrid__label listaGrid__pediodo">Periodo</label>
+                <p class="listaGrid__info listaGrid__pediodoValor">12 meses</p>
+                <label class="listaGrid__label listaGrid__valor">Valor</label>
+                <p class="listaGrid__info listaGrid__valorDinheiro">R$ 300,00</p>
+            </div>
+            <div class="listaGrid__container-botao">
+                <a href="" class="button-principal">
+                    <div class="button-img edit-icon" aria-label="Botão editar"></div>
+                    
+                    <span class="button-text"> Editar </span>
+                <a href="" class="button-principal">
+                    <div class="button-img trash-icon" aria-label="Botão deletar"></div>
+                    
+                    <span class="button-text"> Deletar </span>
+                </a>
+            </div>
+        </section>
+
+        <section class="listaGrid__tabela">
+            <div class="listaGrid__container-titulo" data-btn-listagrid >
+            <label class="listaGrid__id" hidden>2</label>
+            <h2 class="listaGrid__titulo">Agua</h2>
+            <span class="listaGrid__icon  chevrons-down-icon" data-icon-UpDn ></span>
+        </div>
+            <div class="listaGrid__continer-dados" data-listagrid-container>
+                <label class="listaGrid__label listaGrid__tipo">Tipo</label>
+                <p class="listaGrid__info listaGrid__tipoValor">Variáveis</p>
+                <label class="listaGrid__label listaGrid__segmento">Segmento</label>
+                <p class="listaGrid__info listaGrid__segmentoValor">Moradia</p>
+                <label class="listaGrid__label listaGrids__pediodo">Periodo</label>
+                <p class="listaGrid__info listaGrid__pediodoValor">12 meses</p>
+                <label class="listaGrid__label listaGrid__valor">Valor</label>
+                <p class="listaGrid__info listaGrid__valorDinheiro">R$ 200,00</p>
+            </div>
+            <div class="listaGrid__container-botao">
+                <a href="" class="button-principal">
+                    <div class="button-img edit-icon" aria-label="Botão editar"></div>
+                    
+                    <span class="button-text"> Editar </span>
+                <a href="" class="button-principal">
+                    <div class="button-img trash-icon" aria-label="Botão deletar"></div>
+                    
+                    <span class="button-text"> Deletar </span>
+                </a>
+            </div>
+        </section>
+        <section class="listaGrid__tabela">
+            <div class="listaGrid__container-titulo" data-btn-listagrid >
+            <label class="listaGrid__id" hidden>3</label>
+            <h2 class="listaGrid__titulo">Internet</h2>
+            <span class="listaGrid__icon  chevrons-down-icon" data-icon-UpDn></span>
+             </div>
+            <div class="listaGrid__continer-dados" data-listagrid-container>
+                <label class="listaGrid__label listaGrid__tipo">Tipo</label>
+                <p class="listaGrid__info listaGrid__tipoValor">Fixa</p>
+                <label class="listaGrid__label listaGrid__segmento">Segmento</label>
+                <p class="listaGrid__info listaGrid__segmentoValor">Moradia</p>
+                <label class="listaGrid__label listaGrid__pediodo">Periodo</label>
+                <p class="listaGrid__info listaGrid__pediodoValor">12 meses</p>
+                <label class="listaGrid__label listaGrid__valor">Valor</label>
+                <p class="listaGrid__info listaGrid__valorDinheiro">R$ 100,00</p>
+            </div>
+            <div class="listaGrid__container-botao">
+                <a href="" class="button-principal">
+                    <div class="listaGrid__button-img edit-icon" aria-label="Botão editar"></div>
+                    
+                    <span class="button-text"> Editar </span>
+                <a href="" class="button-principal">
+                    <div class="button-img trash-icon" aria-label="Botão deletar"></div>
+                    
+                    <span class="button-text"> Deletar </span>
+                </a>
+            </div>
+        </section>
+
+     </main>
+     <footer class="footer" data-footer>
+    </footer>
+     <script src="../js/app/view/menu.js" type="module"></script>
+     <script src="../js/app/view/footer.js"></script>
+     <script src="../js/app/view/listaGrid-card.js"></script>
+     <script src="../js/main.js" type="module"></script>
+</body>
+</html>

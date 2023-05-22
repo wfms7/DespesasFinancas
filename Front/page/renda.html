@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Finanças Pessoais</title>
+</head>
+<body>
+    <header class="header" data-headerMenu>
+
+    </header>
+    <nav class="nav-menu" data-headerNav data-pag="renda"> 
+     </nav>
+     <main class="main">
+        <section class="titulo">
+            <h1 class="titulo__principal">Renda</h1>
+            <p class="titulo__data" data-today>14 - Janeiro - 2023</p>
+        </section>
+        <section>
+            <div class="listaGrid__container-button-add">
+            <a href="../page/addrenda.html" class="button-principal">
+                <div class="button-img icon-plus"></div>
+                <span class="button-text">Adicionar Renda</span>
+            </a>
+        </div>
+        </section>
+        <Section data-alert class="alert ">
+            
+        </Section>
+        <section data-deletetag>
+
+        </section>
+        <section>
+            
+            <div class="tableitens__busca-container">
+                <button class="button-search" id="btnlimparCampo">
+                    <div class="deletar-icon incon-rotate" aria-label="Botão buscar"></div>
+                 
+                </button>
+                
+                <input type="date" name="" id="buscaInput" class="tableitens__texto" placeholder="Pesquisar por Periodo ">
+                        
+                <button class="button-search" id="btnBuscarPorInput">
+                    <div class="search-icon" aria-label="Botão buscar"></div>
+                   
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <div class="tableitens__total-linhas-container">
+                <label  class="tableitens__total-linhas-valor">Total linhas : <label id="total-linhas">0</label></label>
+                <img src="../img/arrow-left-circle.svg" alt="botão voltar a lista" class="tableitens__left" id="btn-left">
+                <label class="tableitens__numero-pagina-container"> <p class="tableitens__numero-pagina" id="numero-pagina">1</p>  </label>
+                <img src="../img/arrow-right-circle.svg" alt="botão avançar a lista" class="tableitens__right" id="btn-right" >
+            </div>
+         </section>
+
+         <section >
+            <div class="table-container">
+             <div class=" table-fixed">   
+            <table id="resizeMe" class="tableitens">
+                <thead>
+                    <tr class="tableitens__header">
+                        <th class="tableitens__header-iten">Renda</th>
+                        <th class="tableitens__header-iten">Tipo</th>
+                        <th class="tableitens__header-iten">Mensal</th>
+                        <th class="tableitens__header-iten">Periodo</th>
+                        <th class="tableitens__header-iten">Valor</th>
+                        <th class="tableitens__header-iten"></th>
+                    </tr>
+                </thead>
+                <tbody class="tableitens__body" data-pricipal>
+                  <!--  <tr class="tableitens__body-iten-all">
+                        <td class="tableitens__body-iten" data-heading="Renda" >Salario</td>
+                        <td class="tableitens__body-iten" data-heading="Tipo" >Fixo</td>
+                        <td class="tableitens__body-iten" data-heading="Mensal" >Sim</td>
+                        <td class="tableitens__body-iten" data-heading="Periodo" > 01/01/2023</td>
+                        <td class="tableitens__body-iten" data-heading="Valor" >R$3330,00</td>
+                        <td class="tableitens__body-iten-botao">
+                            <div class="tableitens__body-container-botao">
+                                <a href="../page/editusuario.html?id=${id}" class="button-principal">
+                                    <div class="button-img edit-icon" aria-label="Botão editar"></div>
+                                    
+                                    <span class="button-text"> Editar </span>
+                                </a>
+                                <button href="" class="button-principal" data-btndelete="${id}">
+                                    <div class="button-img trash-icon" aria-label="Botão deletar"></div>
+                                    
+                                    <span class="button-text"> Deletar </span>
+                                </button>
+                            </div>
+
+                        </td>
+                    </tr>-->
+                </tbody>
+            
+            </table>
+        </div>
+        </div>
+
+
+        <!--<section class="listaGrid__tabela">
+            <div class="listaGrid__container-titulo" data-btn-listagrid  >
+            <label class="listaGrid__id" hidden>1</label>
+            <h2 class="listaGrid__titulo" >Salario</h2>
+            <span class="listaGrid__icon  chevrons-down-icon" data-icon-UpDn></span>
+            </div>
+            <div class="listaGrid__continer-dados" data-listagrid-container>
+                <label class="listaGrid__label listaGrid__tipo">Tipo</label>
+                <p class="listaGrid__info listaGrid__tipoValor">Fixo</p>
+                <label class="listaGrid__label listaGrid__segmento">Mensal</label>
+                <p class="listaGrid__info listaGrid__segmentoValor">Sim</p>
+                <label class="listaGrid__label listaGrid__grupo-label listaGrid__pediodo">Periodo</label>
+                <div class="listaGrid__group listaGrid__pediodoValor">
+                <p class="listaGrid__info ">Inicio: 01/01/2023</p>
+                <p class="listaGrid__info ">Fim: indefinido</p>
+                </div>
+                <label class="listaGrid__label listaGrid__valor">Valor</label>
+                <p class="listaGrid__info listaGrid__valorDinheiro">R$ 3300,00</p>
+            </div>
+            <div class="listaGrid__container-botao">
+                <a href="" class="button-principal">
+                    <div class="button-img edit-icon" aria-label="Botão editar"></div>
+                    
+                    <span class="button-text"> Editar </span>
+                <a href="" class="button-principal">
+                    <div class="button-img trash-icon" aria-label="Botão deletar"></div>
+                    
+                    <span class="button-text"> Deletar </span>
+                </a>
+            </div>-->
+        </section>
+       
+     
+       
+
+     </main>
+     <footer class="footer" data-footer>
+    </footer>
+     <script src="../js/app/view/menu.js" type="module"></script>
+     <script src="../js/app/view/footer.js"></script>
+    
+     <script src="../js/main.js" type="module"></script>
+     <script src="../js/app/view/resizeColumns.js" type="module"></script>
+     <script src="../js/app/controller/income/incomeControllerGet.js" type="module"></script>
+     <script src="../js/app/view/income/tableIncome.js" type="module"></script>
+     <script src="../js/app/view/income/alertDeleteIncome.js" type="module"></script> 
+     <script src="../js/app/view/pagination.js" type="module"></script>
+</body>
+</html>

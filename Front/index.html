@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Finanças Pessoais</title>
+</head>
+<body>
+    <section class="login">
+    <dic class="login__container">
+        <div class="login__campos">
+            <div class="login__campos-container">
+                <h1 class="login__titulo">Seja Bem vindo</h1>
+                <label class="login__mensagem" id="loginMensagem"></label>
+                <form class="login__form" id="form">  
+                <input type="text" name="login" id="login" class="login__input" placeholder="Digite seu login">
+                <input type="password" name="password" id="password" class="login__input" placeholder="Digite sua Senha">
+                <input type="submit"   class="login__button" value="Entrar" id="btnlogar">
+               </form>  
+                <p class="login__versao">versão 1.0</p>
+            </div>
+
+            
+        </div>
+        <div class="login__img">
+            <img class="login__img-imagem" src="./img/Logo.png">
+        </div>
+    </dic>
+</section>
+    <script src="./js/app/controller/logar/logar.js" type="module"></script>
+</body>
+</html>

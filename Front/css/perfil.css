@@ -1,0 +1,163 @@
+
+.perfil{
+    text-align: center;
+    
+    
+ }
+ 
+ .perfil__user-acronym{
+     display: inline-block;
+     
+     background-color: var(--preto);
+     border: 2.5px solid var(--rosa-escuro);
+     border-radius: 100%;
+     margin-bottom: 10% ;
+ }
+ 
+ 
+   
+ 
+ .perfil__user-acronym-inicial{
+     font-size: 100px;
+     text-transform: uppercase;
+     color: var(--branco);
+     padding: 2rem;
+     
+ }
+ 
+ .perfil__forme-dados{
+     margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+ }
+ 
+ .perfil__user-label{
+   
+     margin-right: 1em;
+     font-size: 16px;
+     font-weight: 700;
+     text-transform: uppercase;
+     
+     margin-bottom: .3rem;
+ 
+ }
+ 
+ .perfil__user-dados{
+     text-align: start;
+     font-size: 16px;
+     margin-bottom: 1rem;
+     
+ 
+ }
+
+
+ .perfil__container-button{
+    display: flex;
+    flex-wrap: wrap;
+     column-gap: .5rem;
+     align-items: center;
+     justify-content: center;
+
+    
+    
+    
+ }
+ 
+ 
+
+ 
+
+
+ /*======================= ===========================*/
+
+
+ @media screen and (min-width: 820px){
+
+    .perfil__user-acronym-inicial{
+        font-size: 150px;
+        
+        padding: 2.5rem;
+        
+    }
+    .perfil__forme-dados{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;    
+     }
+
+    .perfil__user-label{
+        text-align: right;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .perfil__user-dados{
+        font-size: 20px;
+    }
+
+ }
+
+
+
+
+
+
+
+ /*=====================================================*/
+@media screen and (min-width: 1280px){
+
+
+.perfil{
+   text-align: center;
+   
+}
+
+.perfil__user-acronym{
+    display: inline-block;
+    
+    background-color: var(--preto);
+    border: 2.5px solid var(--rosa-escuro);
+    border-radius: 100%;
+    margin-bottom: 2rem ;
+}
+
+
+  
+
+.perfil__user-acronym-inicial{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: var(--branco);
+    padding: 2rem;
+    
+    
+}
+
+.perfil__forme-dados{
+
+ display: grid;
+
+ grid-template-columns:  1fr 1fr;
+
+}
+
+.perfil__user-label{
+  
+    margin-right: 1em;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: right;
+
+}
+
+.perfil__user-dados{
+    text-align: start;
+    font-size: 16px;
+  
+
+}
+
+
+}

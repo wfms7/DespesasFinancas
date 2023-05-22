@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Finanças Pessoais</title>
+</head>
+<body>
+    <header class="header" data-headerMenu data-pag="renda">
+
+    </header>
+    <nav class="nav-menu" data-headerNav> 
+     </nav>
+     <main class="main">
+      <Section data-alert class="alert ">
+        
+      </Section>
+        <section class="titulo">
+            <h1 class="titulo__principal"> Editar Renda</h1>
+            <p class="titulo__data" data-today>14 - Janeiro - 2023</p>
+        </section>
+
+
+        <form class="fomulario__principal renda_form" id="renda_form">
+            <fieldset class="formulario__campo position-renda">
+                <label class="campo__etiqueta" for="renda-nome">Nome</label>
+                <input type="text" name="renda-nome"  id="renda-nome" autocomplete="off" class="campo__escrita" required maxlength="50" data-validar> 
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-renda">
+                <label  class="campo__etiqueta" for="renda-tipo">Tipo</label>
+                <select name="renda-tipo" id="renda-tipo" class="campo__escrita-select" required data-validar>
+                     <option  value="Fixa">Fixa</option>
+                    <option  value="Extra">Extra</option>
+                
+                </select>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-renda">
+            
+            <label class="campo__etiqueta-checkBox"> Mensal <input type="checkbox" name="renda-mensal" id="renda-mensal" class="campo__escrita" data-validar > </label>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+
+            <fieldset class="formulario__campo position-renda">
+                
+              <label  class="campo__etiqueta" for="renda-periodo-inicio">Periodo</label>
+            <div class="conteiner__group">
+              <label for="renda-periodo-inicio"> <input type="date" name="renda-periodo-inicio" id="renda-periodo-inicio" class="campo__escrita_data" data-validar></label>
+              
+            </div>
+              <span class="mensagem__texto"></span>
+
+            </fieldset>
+
+            <fieldset class="formulario__campo position-renda">
+                <label  class="campo__etiqueta" for="renda-valor">Valor</label>
+                <Label>R$  <input type="number" name="renda-valor" id="renda-valor" autocomplete="off" step="0.01" class="campo__escrita" required placeholder="350,00" data-validar>
+                </Label>
+                <span class="mensagem__texto"></span>
+            </fieldset>
+       
+
+            <div class="container__button position-renda">
+                <input value="Salvar" class="button-principal" id="salvar"  type="submit" >
+                <a class="button-principal  " href="../page/renda.html">Voltar </a>
+            </div>
+
+        </form>
+     </main>
+     <footer class="footer" data-footer>
+    </footer>
+     <script src="../js/app/view/menu.js" type="module"></script>
+     <script src="../js/app/view/footer.js"></script>
+     <script src="../js/app/controller/income/incomeControllerEdit.js" type="module"></script>
+     <script src="../js/main.js" type="module"></script>
+</body>
+</html>

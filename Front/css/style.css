@@ -1,0 +1,103 @@
+@import url("reset.css");
+@import url("header.css");
+@import url("titulo.css");
+@import url("card.css");
+@import url("cardChart.css");
+@import url("cardLista.css");
+@import url("footer.css");
+@import url("perfil.css");
+@import url("formulario-principal.css");
+@import url("despesas.css");
+@import url("icon.css");
+@import url("button.css");
+@import url("listaGrid.css");
+@import url("alertMensagem.css");
+@import url("alertDelete.css");
+@import url("tableitens.css");
+@import url("login.css");
+
+
+
+
+@font-face {
+    font-family: 'Fire' ;
+    src: url("../font/Fira_Sans/FiraSans-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --fonte-principal: 'Fire';
+    --cinza:#F0F8FF;    
+    --cinza2:hsl(340, 11%, 95%); 
+    --preto:#382f32;
+    --preto-comTransparencia:#382f3289;
+    --branco:#ffffff;
+    --rosa-mais-claro: #fcd9e5 ;
+    --rosa:#fbc5d8;
+    --rosa-escuro: #f1396d;
+    --verde:#a2eca2aa;  
+    --verde-escuro:#2c4a2c;
+    --vermelho: #f189898c;  
+    --vermelho-escuro:  #f60909; 
+    --input-Block:#dcdcdc99;
+}
+html{
+   
+}
+
+ body{
+   
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    background-color: var(--cinza);
+    height: 100%;
+    color: var(--preto);
+    
+    
+}
+
+a{
+    color: var(--preto);
+}
+  
+a:visited {
+    text-decoration-color: none;
+}
+
+main{
+    min-height: calc(100vh - 50px - 50px  );
+}
+
+
+@media screen and (min-width: 1280px){
+    body{
+        width: 1260px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: 
+        "header header" 
+        "nav-menu main"
+        "footer footer";
+        grid-template-columns: auto 1fr;
+        
+      
+       
+    }
+
+    .header{
+        grid-area: header;
+        
+    }
+    .nav-menu{
+        grid-area:nav-menu ;
+    }
+    .main{
+        grid-area: main;
+        
+        
+    }
+    .footer{
+        grid-area: footer;
+    }
+}

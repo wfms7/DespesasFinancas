@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Finanças Pessoais</title>
+</head>
+<body>
+    <header class="header" data-headerMenu data-pag="dashboard">
+    <!--  <div class="header__container">
+        <button class="header__menu" id="menu-nav"><img class="header__menu-imagem" src="img/menu.svg" alt="menu"> </button>
+        <img class="header__imagem-logo" src="img/Logo.png" alt="Logo Finança Pessoal">
+        <div class="header__user">
+           <p class="header__user-acronym">WF</p>       
+        </div>-->
+       
+    </header>
+    <nav class="nav-menu" data-headerNav>
+      <!--<div class="nav-menu__container" data-navmenu>
+            <ul class="nav-menu__lista">
+                <li class="nav-menu__item nav-menu__item--ativo "><a href="#" class="nav-menu__link nav-menu__link--ativo">Dashboard</a></li>
+                <li class="nav-menu__item"><a href="#" class="nav-menu__link">Perfil</a></li>
+                <li class="nav-menu__item"><a href="#" class="nav-menu__link">Despesas</a></li>
+                <li class="nav-menu__item"><a href="#" class="nav-menu__link">Cartão de Credito</a></li>
+                <li class="nav-menu__item"><a href="#" class="nav-menu__link">Renda</a></li>
+            </ul>
+      </div>-->
+    </nav>
+    <main class="main">
+        <section class="titulo">
+            <h1 class="titulo__principal">Dashboard</h1>
+            <p class="titulo__data" data-today>14 - Janeiro - 2023</p>
+        </section>
+        <section class="card-boas-vindas">
+            <div class="card-boas-vindas__container">
+                <h2 class="card-boas-vindas__titulo" id="bemvindo"></h2>
+                <p class="card-boas-vindas__mensagem">Não existe outro modo de conquistar o sucesso! </p>
+                <img src="../img/car-boas-vindas.png" alt="imagem financeira" class="card-boas-vindas__imagem">
+            </div>
+        </section>
+        <div class="container-card">
+            <div class="container-card__financeira-card">
+        <section class="card-finanaca-mes">
+            <div class="card-financa-mes__conteiner">
+                <h4 class="financa-mes__titulo">Total de gastos no mês</h4>
+                <p class="card-financa-mes__valor">R$ 3000,00</p>
+            </div>
+        </section>
+        <section class="card-finanaca-mes">
+            <div class="card-financa-mes__conteiner">
+                <h4 class="financa-mes__titulo">Total de gastos no Cartão no mês</h4>
+                <p class="card-financa-mes__valor">R$ 1300,00</p>
+            </div>
+        </section>
+        <section class="card-finanaca-mes">
+            <div class="card-financa-mes__conteiner">
+                <h4 class="financa-mes__titulo">Total de Despesas no mês</h4>
+                <p class="card-financa-mes__valor">R$ 965,00</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="container-card__grafico-card">
+        <section class="card-grafico">
+            <div class="card-grafico__container">
+                <h2 class="card-grafico__titulo">Total de Gastos</h2>
+                <div class="card-grafico__chart"><div id="totalGasto"></div></div>
+            </div>
+
+        </section>
+        <section class="card-grafico">
+            <div class="card-grafico__container">
+                <h2 class="card-grafico__titulo">Total de Gastos do Cartão</h2>
+                <div class="card-grafico__chart"><div id="GastoCartao"></div></div>
+            </div>
+
+        </section>
+        <section class="card-grafico">
+            <div class="card-grafico__container">
+                <h2 class="card-grafico__titulo">Total de Gastos no Mês</h2>
+                <div class="card-grafico__chart"><div id="GastosMes"></div></div>
+            </div>
+        </section>
+    </div>
+    <div  class="container-card__list-ultimos-gastos">
+        <section class="list-ultimos-gastos">
+            <div class="lista-ultimos-gastos__container">
+                <h2 class="lista-ultimos-gastos__titulo">10 - Últimos Gastos </h2>
+               
+                <ul class="lista-ultimos-gastos__lista">
+                    <li class="lista-ultimos-gastos__item">
+                        <h3 class="lista-ultimo-gasto__item-titulo">Mercado</h3>
+                        <p class="lista-ultimo-gasto__valor">R$ 67,00</p>
+                        <p class="lista-ultimo-gasto__data">17/01/2023</p>
+                    </li>
+                    <li class="lista-ultimos-gastos__item">
+                        <h3 class="lista-ultimo-gasto__item-titulo">Farmácia</h3>
+                        <p class="lista-ultimo-gasto__valor">R$ 135,00</p>
+                        <p class="lista-ultimo-gasto__data">14/01/2023</p>
+                    </li>
+                    <li class="lista-ultimos-gastos__item">
+                        <h3 class="lista-ultimo-gasto__item-titulo">Açougue</h3>
+                        <p class="lista-ultimo-gasto__valor">R$ 100,00</p>
+                        <p class="lista-ultimo-gasto__data">14/01/2023</p>
+                    </li>
+                    <li class="lista-ultimos-gastos__item">
+                        <h3 class="lista-ultimo-gasto__item-titulo">Padaria</h3>
+                        <p class="lista-ultimo-gasto__valor">R$ 15,00</p>
+                        <p class="lista-ultimo-gasto__data">13/01/2023</p>
+                    </li>
+                    <li class="lista-ultimos-gastos__item">
+                        <h3 class="lista-ultimo-gasto__item-titulo">Mercado</h3>
+                        <p class="lista-ultimo-gasto__valor">R$ 650,00</p>
+                        <p class="lista-ultimo-gasto__data">05/01/2023</p>
+                    </li>
+                    <li class="lista-ultimos-gastos__item">
+                        <h3 class="lista-ultimo-gasto__item-titulo">Açougue</h3>
+                        <p class="lista-ultimo-gasto__valor">R$ 237,00</p>
+                        <p class="lista-ultimo-gasto__data">31/12/2022</p>
+                    </li>
+                    <li class="lista-ultimos-gastos__item">
+                        <h3 class="lista-ultimo-gasto__item-titulo">Presente</h3>
+                        <p class="lista-ultimo-gasto__valor">R$150,00</p>
+                        <p class="lista-ultimo-gasto__data">24/12/2022</p>
+                    </li>
+                    <li class="lista-ultimos-gastos__item">
+                        <h3 class="lista-ultimo-gasto__item-titulo">Passeio</h3>
+                        <p class="lista-ultimo-gasto__valor">R$ 367,00</p>
+                        <p class="lista-ultimo-gasto__data">19/12/2022</p>
+                    </li>
+                    <li class="lista-ultimos-gastos__item">
+                        <h3 class="lista-ultimo-gasto__item-titulo">Farmcia</h3>
+                        <p class="lista-ultimo-gasto__valor">R$ 175,23</p>
+                        <p class="lista-ultimo-gasto__data">15/12/2022</p>
+                    </li>
+                    <li class="lista-ultimos-gastos__item">
+                        <h3 class="lista-ultimo-gasto__item-titulo">Posto gasolina</h3>
+                        <p class="lista-ultimo-gasto__valor">R$ 230,00</p>
+                        <p class="lista-ultimo-gasto__data">05/12/2022</p>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+        </section>
+    </div>
+  
+
+    </main>
+
+    <footer class="footer" data-footer>
+      <!--  <div class="footer__container">
+           
+            <h2 class="footer__titulo">Finanças Pessoais </h2>
+            
+        </div>-->
+    </footer>
+    <script src="../js/app/view/menu.js" type="module" ></script>
+    <script src="../js/app/view/footer.js"></script>
+    <script src="../js/main.js" type="module"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/app/view/totalGastoChart.js" type="module"></script>
+    <script src="../js/app/view/GastoCartaoCharts.js" type="module"></script>
+    <script src="../js/app/view/GastosMesChart.js" type="module"></script>
+    <script src="../js/app/view/dashboard/dashboard.js" type="module"></script>
+   
+
+</body>
+</html>
